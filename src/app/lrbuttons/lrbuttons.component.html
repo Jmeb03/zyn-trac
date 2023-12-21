@@ -1,0 +1,16 @@
+<div class="button-container">
+    <button
+      class="custom-button"
+      [ngClass]="{ 'pressed': lastPressedButton === 'Button 1' }"
+      (click)="buttonClick('Button 1')"
+    >
+      L
+    </button>
+    <button
+      class="custom-button"
+      [ngClass]="{ 'pressed': lastPressedButton === 'Button 2' }"
+      (click)="buttonClick('Button 2')"
+    >
+      R
+    </button>
+</div>
