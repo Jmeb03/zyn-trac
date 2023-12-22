@@ -1,5 +1,6 @@
 .button-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
@@ -17,16 +18,19 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
+  .reset-button {
+    margin: 5px; /* Add margin to separate it from the buttons */
+    padding: 10px; /* Adjust padding according to your design */
+    background-color: #3498db; /* Add a background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
   
   .pressed {
     background-color: #ffffff; /* Change the background color for the pressed state */
   }
 
-.reset-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200 px;
-}

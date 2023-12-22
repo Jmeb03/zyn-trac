@@ -1,4 +1,5 @@
 <div class="button-container">
+  <div class="button row">
     <button
       class="custom-button"
       [ngClass]="{ 'pressed': lastPressedButton === 'Button 1' }"
@@ -13,10 +14,11 @@
     >
       R
     </button>
+    </div>
     <button
       class="reset-button"
       (click)="resetCounter()">
     Reset
     </button>
-    <p>Zyns used today: {{buttonCounter}}</p>
+    <p style="font-family:'Courier New', Courier, monospace">Zyns used today: {{buttonCounter}}</p>
 </div>

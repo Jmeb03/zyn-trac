@@ -26,20 +26,16 @@ export class LrbuttonsComponent implements OnInit{
   }
 
   buttonClick(buttonName: string): void {
-    this.lastPressedButton = buttonName;
-    localStorage.setItem('lastPressedButton', buttonName);
+    if (buttonName !== this.lastPressedButton) {
+      this.lastPressedButton = buttonName;
+      localStorage.setItem('lastPressedButton', buttonName);
 
-
-    this.buttonCounter++;
-    localStorage.setItem('buttonCounter', this.buttonCounter.toString());
+      this.buttonCounter++;
+      localStorage.setItem('buttonCounter', this.buttonCounter.toString());
+    }
   }
 
   resetCounter(): void {
     this.buttonCounter = 0;
-  }
-
-  private isMidnight(): boolean {
-    const now = new Date();
-    return now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0;
   }
 }
