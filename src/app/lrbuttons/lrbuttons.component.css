@@ -18,7 +18,15 @@
     cursor: pointer;
   }
   
+
   
   .pressed {
     background-color: #ffffff; /* Change the background color for the pressed state */
   }
+
+.reset-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200 px;
+}
